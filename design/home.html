@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TWLike</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="design/admin-lte/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="design/admin-lte/dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="design/admin-lte/dist/css/skins/skin-purple.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+<body class="hold-transition skin-purple layout-top-nav">
+<section data-component="Dashboard">
+<div class="wrapper">
+
+  <header class="main-header" data-component="MainHeader">
+    <nav class="navbar navbar-static-top">
+
+        <div class="navbar-header">
+          <a href="../../index2.html" class="navbar-brand"><b>TW</b>Like</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Navbar Right Menu -->
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <!-- User Account Menu -->
+            <li class="dropdown user user-menu">
+              <!-- Menu Toggle Button -->
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <!-- The user image in the navbar-->
+                <img src="design/admin-lte/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                <span class="hidden-xs">Alexander Pierce</span>
+              </a>
+              <ul class="dropdown-menu">
+                <!-- The user image in the menu -->
+                <li class="user-header">
+                  <img src="design/admin-lte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                  <p>
+                    Alexander Pierce - Web Developer
+                    <small>Member since Nov. 2012</small>
+                  </p>
+                </li>
+                <!-- Menu Body -->
+                <li class="user-body">
+                  <div class="row">
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Followers</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Sales</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Friends</a>
+                    </div>
+                  </div>
+                  <!-- /.row -->
+                </li>
+                <!-- Menu Footer-->
+                <li class="user-footer">
+                  <div class="pull-left">
+                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  </div>
+                  <div class="pull-right">
+                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-custom-menu -->
+
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+  <!-- Full Width Column -->
+  <div class="content-wrapper">
+
+      <!-- Content Header (Page header) -->
+      <section class="content-header" data-component="ContentHeader">
+        <h1>
+          Home
+          <small>Timeline</small>
+        </h1>
+      </section>
+
+      <!-- Main content -->
+      <!-- Main content -->
+      <section class="content">
+
+        <div class="row">
+          <div class="col-md-3">
+
+            <!-- Profile Image -->
+            <div class="box box-solid">
+              <div class="box-body box-profile" data-component="BoxProfile">
+                <img class="profile-user-img img-responsive img-circle" src="design/admin-lte/dist/img/user4-128x128.jpg" alt="User profile picture">
+
+                <h3 class="profile-username text-center">Nina Mcintire</h3>
+
+                <p class="text-muted text-center">Software Engineer</p>
+
+                <ul class="list-group list-group-unbordered">
+                  <li class="list-group-item">
+                    <b>Followers</b> <a class="pull-right">1,322</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Following</b> <a class="pull-right">543</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+
+
+          </div>
+          <!-- /.col -->
+          <div class="col-md-6">
+              <div class="row" data-component="WritePost">
+                  <div class="box box-solid">
+                    <div class="box-header with-border">
+                      <h3 class="box-title">Write post</h3>
+                    </div>
+                    <div class="box-body">
+                    <input class="form-control input-lg" placeholder="What's in your mind?">
+                    </div>
+                    <div class="box-footer">
+                      <button type="submit" class="btn btn-info pull-right">Send</button>
+                    </div>
+                </div>
+              </div>
+              <div class="row">
+            <div class="box box-solid">
+                <div class="box-header with-border" data-component="BoxPostHeader">
+                    <h3 class="box-title">My Posts</h3>
+                </div>
+            <!-- /.box-header -->
+            <div class="box-body" data-component="BoxPosts">
+                <!-- Post -->
+                <div class="post" data-component="Post">
+                  <div class="user-block">
+                    <img class="img-circle img-bordered-sm" src="design/admin-lte/dist/img/user1-128x128.jpg" alt="user image">
+                        <span class="username">
+                          <a href="#">Jonathan Burke Jr.</a>
+                        </span>
+                    <span class="description">Shared publicly - 7:30 PM today</span>
+                  </div>
+                  <!-- /.user-block -->
+                  <p>
+                    Lorem ipsum represents a long-held tradition for designers,
+                    typographers and the like. Some people hate it and argue for
+                    its demise, but others ignore the hate as they create awesome
+                    tools to help create filler text for everyone from bacon lovers
+                    to Charlie Sheen fans.
+                  </p>
+                  <ul class="list-inline">
+                    <li><a href="#" class="link-black text-sm"><i class="fa fa-share margin-r-5"></i> Share</a></li>
+                    <li><a href="#" class="link-black text-sm"><i class="fa fa-thumbs-o-up margin-r-5"></i> Like</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.post -->
+
+                <!-- Post -->
+                <div class="post">
+                  <div class="user-block">
+                    <img class="img-circle img-bordered-sm" src="design/admin-lte/dist/img/user7-128x128.jpg" alt="User Image">
+                        <span class="username">
+                          <a href="#">Sarah Ross</a>
+                        </span>
+                    <span class="description">Sent you a message - 3 days ago</span>
+                  </div>
+                  <!-- /.user-block -->
+                  <p>
+                    Lorem ipsum represents a long-held tradition for designers,
+                    typographers and the like. Some people hate it and argue for
+                    its demise, but others ignore the hate as they create awesome
+                    tools to help create filler text for everyone from bacon lovers
+                    to Charlie Sheen fans.
+                  </p>
+
+                  <ul class="list-inline">
+                    <li><a href="#" class="link-black text-sm"><i class="fa fa-share margin-r-5"></i> Share</a></li>
+                    <li><a href="#" class="link-black text-sm"><i class="fa fa-thumbs-o-up margin-r-5"></i> Like</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.post -->
+                <!-- Post -->
+                <div class="post">
+                  <div class="user-block">
+                    <img class="img-circle img-bordered-sm" src="design/admin-lte/dist/img/user1-128x128.jpg" alt="user image">
+                        <span class="username">
+                          <a href="#">Jonathan Burke Jr.</a>
+                        </span>
+                    <span class="description">Shared publicly - 7:30 PM today</span>
+                  </div>
+                  <!-- /.user-block -->
+                  <p>
+                    Lorem ipsum represents a long-held tradition for designers,
+                    typographers and the like. Some people hate it and argue for
+                    its demise, but others ignore the hate as they create awesome
+                    tools to help create filler text for everyone from bacon lovers
+                    to Charlie Sheen fans.
+                  </p>
+                  <ul class="list-inline">
+                    <li><a href="#" class="link-black text-sm"><i class="fa fa-share margin-r-5"></i> Share</a></li>
+                    <li><a href="#" class="link-black text-sm"><i class="fa fa-thumbs-o-up margin-r-5"></i> Like</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.post -->
+
+                <!-- Post -->
+                <div class="post">
+                  <div class="user-block">
+                    <img class="img-circle img-bordered-sm" src="design/admin-lte/dist/img/user7-128x128.jpg" alt="User Image">
+                        <span class="username">
+                          <a href="#">Sarah Ross</a>
+                        </span>
+                    <span class="description">Sent you a message - 3 days ago</span>
+                  </div>
+                  <!-- /.user-block -->
+                  <p>
+                    Lorem ipsum represents a long-held tradition for designers,
+                    typographers and the like. Some people hate it and argue for
+                    its demise, but others ignore the hate as they create awesome
+                    tools to help create filler text for everyone from bacon lovers
+                    to Charlie Sheen fans.
+                  </p>
+
+                  <ul class="list-inline">
+                    <li><a href="#" class="link-black text-sm"><i class="fa fa-share margin-r-5"></i> Share</a></li>
+                    <li><a href="#" class="link-black text-sm"><i class="fa fa-thumbs-o-up margin-r-5"></i> Like</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.post -->
+            </div>
+        </div>
+        </div>
+        </div>
+          <!-- /.col -->
+
+          <div class="col-md-3">
+              <!-- About Me Box -->
+              <div class="box box-solid" data-component="BoxRight">
+                <div class="box-header with-border">
+                  <h3 class="box-title">About Me</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                  <strong><i class="fa fa-book margin-r-5"></i> Education</strong>
+
+                  <p class="text-muted">
+                    B.S. in Computer Science from the University of Tennessee at Knoxville
+                  </p>
+
+                  <hr>
+
+                  <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
+
+                  <p class="text-muted">Malibu, California</p>
+
+                  <hr>
+
+                  <strong><i class="fa fa-pencil margin-r-5"></i> Skills</strong>
+
+                  <p>
+                    <span class="label label-danger">UI Design</span>
+                    <span class="label label-success">Coding</span>
+                    <span class="label label-info">Javascript</span>
+                    <span class="label label-warning">PHP</span>
+                    <span class="label label-primary">Node.js</span>
+                  </p>
+
+                  <hr>
+
+                  <strong><i class="fa fa-file-text-o margin-r-5"></i> Notes</strong>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
+                </div>
+                <!-- /.box-body -->
+              </div>
+              <!-- /.box -->
+          </div>
+        </div>
+        <!-- /.row -->
+
+      </section>
+      <!-- /.content -->
+
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+
+</div>
+<!-- ./wrapper -->
+</section>
+</body>
+</html>

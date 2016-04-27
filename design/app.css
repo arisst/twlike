@@ -1,0 +1,15 @@
+.timeline:before {
+  content: '';
+  position: static;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background: #ddd;
+  left: 0;
+  margin: 0;
+  border-radius: none;
+}
+.timeline > li > .timeline-item {
+   margin-left:0;
+   margin-right:0;
+}
